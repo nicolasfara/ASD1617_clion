@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.c
+lib1617.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.h
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
+ctype.h
+-
+math.h
+-
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+lib1617.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.h
+

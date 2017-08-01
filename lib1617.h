@@ -27,7 +27,7 @@ typedef struct NODO {
     struct NODO *left;
     struct NODO *right;
     struct NODO *parent;
-    //altri campi
+    double percentageSimilarity;
 }NODO;
 
 //NODO ALBERO DI HUFFMAN

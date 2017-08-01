@@ -42,10 +42,12 @@ int levenshtein(const char *, int, const char *, int);
 unsigned char convert_accent(unsigned char);
 int empties_dictionary(NODO **);
 
+int distance(char *source, char *target);
+void setSimilarity(NODO *dictionary, char* word);
+
 //FUNZIONI "BASE"
 
-NODO *createFromFile(char * nameFile)
-{
+NODO *createFromFile(char * nameFile) {
     unsigned short i = 0;
     unsigned char tmp;
     NODO* root = NULL;
@@ -76,16 +78,16 @@ NODO *createFromFile(char * nameFile)
         node->right = NULL;
         node->parent = NULL;
 
-        tmp = getc(f);
+        tmp = (unsigned char)getc(f);
         //Controllo che il carattere letto sia una lettera (anche accentata)
         for (i = 0; ((tmp >= 65 && tmp <= 90) || (tmp >= 97 && tmp <= 122) || (tmp >= 192 && tmp <= 252)); i++) {
             if (tmp >= 192 && tmp <= 252)
                 tmp = convert_accent(tmp);
             else
-                tmp = tolower(tmp);
+                tmp = (unsigned char)tolower(tmp);
 
             node->word[i] = tmp;
-            tmp = getc(f);
+            tmp = (unsigned char)getc(f);
         }
         node->word[i] = '\0'; //Add string terminator
         //Check if the word is 2 char lenght
@@ -270,7 +272,7 @@ NODO *importDictionary(char * fileInput) {
     return root;
 }
 
-int searchAdvance(NODO * dictionary, char * word, char ** first, char ** second, char ** third) {
+/*int searchAdvance(NODO * dictionary, char * word, char ** first, char ** second, char ** third) {
     if (word == NULL || dictionary == NULL) {
         *first = *second = *third = NULL;
         return -1;
@@ -286,7 +288,16 @@ int searchAdvance(NODO * dictionary, char * word, char ** first, char ** second,
     if (head[2].distance == 0x7fff)						//se ho trovato solo 2 parole simili
         return -1;
     return res;
+}*/
+
+int searchAdvance(NODO * dictionary, char * word, char ** first, char ** second, char ** third) {
+
+    setSimilarity(dictionary, word);
+
+
+
 }
+
 
 int compressHuffman(NODO * dictionary, char * file_name) {
     char eof = 27;
@@ -356,7 +367,7 @@ HNode *allocates_node(int i) {
     if (node == NULL)									//CONTROLLO L'ALLOCAZIONE
         return NULL;
 
-    node->letter = i;									//INDICE DELL'ARRAY CORRISPONDENTE ALLA LETTERA
+    node->letter = (char)i;									//INDICE DELL'ARRAY CORRISPONDENTE ALLA LETTERA
     node->left = node->right = node->next = NULL;
 
     return node;										//PUNTATORE AL NODO
@@ -421,45 +432,45 @@ int compress_node(NODO * n, FILE * output, unsigned int *code_table) {
 }
 
 void compress_string(char *n_string, FILE *output, unsigned int *code_table) {
-    char bit, c, byte = 0;										//1 BYTE
-    unsigned int code, lenght, i = 0, bits_left = 8;
+    char bit = 0, c = 0, byte = 0;										//1 BYTE
+    unsigned int code = 0, lenght = 0, i = 0, bits_left = 8;
 
     do{
         if (n_string == NULL) {
-            lenght = (int)log10((code_table[27]) + 1);			//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
+            lenght = (unsigned int)log10((code_table[27]) + 1);			//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
             code = code_table[27];								//CODIFICA BIN
         }
         else {
             c = n_string[i];
 
             if (c >= 97 && c <= 122) {							//LETTERE MINUSCOLE
-                lenght = (int)log10((code_table[c - 97]) + 1);	//LENGHT = LUNGHEZZA CODIFICA (CODIFICA ASCII DELLE LETTERE - 97 = INDICE LETTERA NELLA TABELLA)
+                lenght = (unsigned int)log10((code_table[c - 97]) + 1);	//LENGHT = LUNGHEZZA CODIFICA (CODIFICA ASCII DELLE LETTERE - 97 = INDICE LETTERA NELLA TABELLA)
                 code = code_table[c - 97];						//CODIFICA "BINARIA" DELLA LETTERA
             }
             if (c == 32) {										//CARATTERE SPAZIO
-                lenght = (int)log10((code_table[26]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
+                lenght = (unsigned int)log10((code_table[26]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
                 code = code_table[26];							//CODIFICA BIN
             }
             if (c == 0) {										//CARATTERE NULL
-                lenght = (int)log10((code_table[27]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
+                lenght = (unsigned int)log10((code_table[27]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
                 code = code_table[27];							//CODIFICA BIN
             }
             if (c == 10) {										//CARATTERE "NEW LINE"
-                lenght = (int)log10((code_table[28]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
+                lenght = (unsigned int)log10((code_table[28]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
                 code = code_table[28];							//CODIFICA BIN
             }
             if (c == 96) {										//CARATTERE "APOSTROFO"
-                lenght = (int)log10((code_table[29]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
+                lenght = (unsigned int)log10((code_table[29]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
                 code = code_table[29];							//CODIFICA BIN
             }
             if (c == 27) {										//CARATTERE "ESCAPE"
-                lenght = (int)log10((code_table[30]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
+                lenght = (unsigned int)log10((code_table[30]) + 1);		//LUNGHEZZA BINARIA DEL NUMERO CODIFICATO
                 code = code_table[30];							//CODIFICA BIN
             }
         }
         while (lenght + 1 > 0)									//MI SCORRO TUTTI I "BIT" DELLA CODIFICA
         {
-            bit = (code / pow(10, lenght)) - 1;					//PRENDO "BIT PER BIT" LA CODIFICA DELLA LETTERA (-1 PERCHE' GLI 0 = 1 E 1 = 2 NELLA TABELLA)
+            bit = (char)((code / pow(10, lenght)) - 1);					//PRENDO "BIT PER BIT" LA CODIFICA DELLA LETTERA (-1 PERCHE' GLI 0 = 1 E 1 = 2 NELLA TABELLA)
             switch (bit)
             {
                 case 3:
@@ -547,12 +558,12 @@ int decompress_file(FILE *input, NODO **dict_root, HNode *tree) {
         return -1;
     nodo_pointer->word = string;
 
-    if ((c = fgetc(input)) == EOF)
+    if ((c = (char)fgetc(input)) == EOF)
         return -1;
 
     while (end_of_file != 1) {											//ACQUISISCE CICLICAMENTE I CARATTERI FINCHE' NON ARRIVA ALLA FINE DEL FILE
         for (i = 0; i<8; i++) {											//PER OGNI BIT
-            bit = c & 0x80;												//PRENDE IL PRIMO BIT (AND CON 10000000)
+            bit = (char)(c & 0x80);												//PRENDE IL PRIMO BIT (AND CON 10000000)
             c = c << 1;													//SHIFTO IL BYTE
             if (bit == 0)												//SE IL BIT "ESTRATTO" E' "ZERO"
                 current = current->left;								//MI SPOSTO SUL RAMO SINISTRO DELL'ALBERO
@@ -561,7 +572,7 @@ int decompress_file(FILE *input, NODO **dict_root, HNode *tree) {
 
             if (current->letter != 127){								//SE SONO GIUNTO AD UNA FOGLIA
                 if (current->letter >= 0 && current->letter <= 25) {	//SE E' UNA LETTERA
-                    string[k] = current->letter + 97;
+                    string[k] = (char)(current->letter + 97);
                     k++;
                 }
                 if (current->letter == 26) {							//SE E' LO SPAZIO
@@ -614,7 +625,7 @@ int decompress_file(FILE *input, NODO **dict_root, HNode *tree) {
                 current = tree;											//TORNO ALLA RADICE
             }
         }
-        c = fgetc(input);
+        c = (char)fgetc(input);
     }
     return 0;
 }
@@ -628,11 +639,11 @@ int search_in_node(NODO *n, MSWNode *head, char *word) {
     if (!strcmp(n->word, word))
         ris = 1;
     else {
-        int ln = strlen(n->word);
-        int lw = strlen(word);
+        int ln = (int)strlen(n->word);
+        int lw = (int)strlen(word);
         int dist = levenshtein(n->word, ln, word, lw);
         if (dist < head[2].distance) {		//se la nuova parola � pi� simile la sostituisco alla meno simile di quelle gia salvate
-            head[2].distance = dist;
+            head[2].distance = (short)dist;
             *(head[2].w_pointer) = n->word;
             if (head[2].distance < head[1].distance) { //se � pi� simile della seconda ne cambio posizione
                 MSWNode tmp = head[1];
@@ -925,6 +936,8 @@ NODO* searchWord(NODO* root, char* word) {
         case 1: //peso minore
             return searchWord(root->left, word);
             break;
+        default:
+            return NULL;
     }
 
     //Here there is an error
@@ -1065,3 +1078,55 @@ void insertRBT(NODO** root, NODO* node) {
     node->isBlack = false;
     insertFixUp(root, &node);
 }
+
+
+int distance(char *source, char *target) {
+
+    if((strlen(source) == 0) || (strlen(target) == 0)) return 0;
+    if(source == NULL || target == NULL) return 0;
+    if(!strcmp(source, target)) return (int)strlen(target);
+
+    unsigned int sourceWordCount = (unsigned int)strlen(source);
+    unsigned int targetWordCount = (unsigned int)strlen(target);
+
+    int distance[sourceWordCount + 1][targetWordCount + 1];
+
+    for (int i = 0; i <= sourceWordCount ; distance[i][0] = i++);
+    for (int j = 0; j <= targetWordCount ; distance[0][j] = j++);
+
+    for (int i = 1; i <= sourceWordCount ; i++) {
+        for (int j = 1; j <= targetWordCount ; j++) {
+            int cost = (target[j - 1] == source[i - 1]) ? 0 : 1;
+
+            distance[i][j] = (int)fmin((float)fmin((float)distance[i - 1][j] + 1, (float)distance[i][j - 1] + 1), distance[i - 1][j - 1] + cost);
+
+        }
+
+    }
+
+    return distance[sourceWordCount][targetWordCount];
+}
+
+double CalculateSimilarity(char *source, char *target) {
+
+    if(source == NULL || target == NULL) return 0.0;
+    if(!strlen(source) ||!strlen(target)) return 0.0;
+    if(!strcmp(source, target)) return 1.0;
+
+    int stepsToSame = distance(source, target);
+    if(stepsToSame < 0)
+        return 0.0;
+    return (1.0f - ((double)stepsToSame / fmax((double)strlen(source), (double)strlen(target))));
+}
+
+void setSimilarity(NODO *dictionary, char* word) {
+
+    if(dictionary == sentinel)
+        return;
+
+    setSimilarity(dictionary->left, word);
+    double sim = CalculateSimilarity(dictionary->word, word);
+    dictionary->percentageSimilarity = sim;
+    setSimilarity(dictionary->right, word);
+}
+

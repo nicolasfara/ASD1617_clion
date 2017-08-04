@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.c
+RBT.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.h
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+utility.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.h
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.c
+huffman.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.h
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.h
+stdio.h
+-
+stdlib.h
+-
+RBT.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.h
+
 /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/lib1617.c
 lib1617.h
 /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/lib1617.h
@@ -23,6 +49,10 @@ ctype.h
 -
 math.h
 -
+RBT.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.h
+huffman.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.h
 
 /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/main.c
 stdio.h
@@ -33,4 +63,20 @@ time.h
 -
 lib1617.h
 /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/lib1617.h
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.c
+utility.h
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.h
+
+/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+stdbool.h
+-
 

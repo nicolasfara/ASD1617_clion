@@ -123,6 +123,60 @@ ASD1617/fast:
 	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/build
 .PHONY : ASD1617/fast
 
+RBT.o: RBT.c.o
+
+.PHONY : RBT.o
+
+# target to build an object file
+RBT.c.o:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/RBT.c.o
+.PHONY : RBT.c.o
+
+RBT.i: RBT.c.i
+
+.PHONY : RBT.i
+
+# target to preprocess a source file
+RBT.c.i:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/RBT.c.i
+.PHONY : RBT.c.i
+
+RBT.s: RBT.c.s
+
+.PHONY : RBT.s
+
+# target to generate assembly for a file
+RBT.c.s:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/RBT.c.s
+.PHONY : RBT.c.s
+
+huffman.o: huffman.c.o
+
+.PHONY : huffman.o
+
+# target to build an object file
+huffman.c.o:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman.c.o
+.PHONY : huffman.c.o
+
+huffman.i: huffman.c.i
+
+.PHONY : huffman.i
+
+# target to preprocess a source file
+huffman.c.i:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman.c.i
+.PHONY : huffman.c.i
+
+huffman.s: huffman.c.s
+
+.PHONY : huffman.s
+
+# target to generate assembly for a file
+huffman.c.s:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman.c.s
+.PHONY : huffman.c.s
+
 lib1617.o: lib1617.c.o
 
 .PHONY : lib1617.o
@@ -177,6 +231,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/main.c.s
 .PHONY : main.c.s
 
+utility.o: utility.c.o
+
+.PHONY : utility.o
+
+# target to build an object file
+utility.c.o:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/utility.c.o
+.PHONY : utility.c.o
+
+utility.i: utility.c.i
+
+.PHONY : utility.i
+
+# target to preprocess a source file
+utility.c.i:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/utility.c.i
+.PHONY : utility.c.i
+
+utility.s: utility.c.s
+
+.PHONY : utility.s
+
+# target to generate assembly for a file
+utility.c.s:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/utility.c.s
+.PHONY : utility.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ASD1617"
+	@echo "... RBT.o"
+	@echo "... RBT.i"
+	@echo "... RBT.s"
+	@echo "... huffman.o"
+	@echo "... huffman.i"
+	@echo "... huffman.s"
 	@echo "... lib1617.o"
 	@echo "... lib1617.i"
 	@echo "... lib1617.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... utility.o"
+	@echo "... utility.i"
+	@echo "... utility.s"
 .PHONY : help
 
 

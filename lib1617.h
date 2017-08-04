@@ -11,38 +11,10 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+#include "RBT.h"
+#include "huffman.h"
 
-#endif //ASD1617_LIB1617_H
 
-#define MAX_DEF 50
-#define MAX_WORD 20
-#define MIN_WORD 2
-#define ELEMENTS sizeof(letter_frequencies) / sizeof(int)
-
-//NODO RBT
-typedef struct NODO {
-    char* word;
-    char* def;
-    bool isBlack;
-    struct NODO *left;
-    struct NODO *right;
-    struct NODO *parent;
-    double percentageSimilarity;
-}NODO;
-
-//NODO ALBERO DI HUFFMAN
-typedef struct NODE{
-    int frequencies;
-    char letter;
-    struct NODE *left, *right;
-    struct NODE *next;
-} HNode;
-
-//NODO AUSILIARIO RICERCA PAROLE PIU' SIMILI
-typedef struct MSW {		//most similar word
-    char **w_pointer;
-    short int distance;
-} MSWNode;
 
 
 /*
@@ -191,3 +163,4 @@ Output:
 */
 int decompressHuffman(char *fileInput, NODO** dictionary);
 
+#endif //ASD1617_LIB1617_H

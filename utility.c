@@ -20,6 +20,14 @@ unsigned short count_find = 0;
 	return find_index_word(n->right, index, counter_pt);		//ALTRIMENTI RESTITUISCO  QUELLO CHE MI PASSA IL FIGLIO DESTRO
 }*/
 
+/**
+ *
+ * @param s
+ * @param ls
+ * @param t
+ * @param lt
+ * @return
+ */
 int levenshtein(const char *s, int ls, const char *t, int lt) {
     if (!ls)
         return lt;
@@ -39,6 +47,11 @@ int levenshtein(const char *s, int ls, const char *t, int lt) {
     return a + 1;
 }
 
+/**
+ * Converts accent character.
+ * @param c character to convert.
+ * @return return the character converted.
+ */
 unsigned char convert_accent(unsigned char c) {
     if ((c >= 192 && c <= 198) || (c >= 224 && c <= 230))	//trasformo gli accenti in caratteri
         return 'a';
@@ -68,7 +81,14 @@ unsigned char convert_accent(unsigned char c) {
     return ' '; //NEVER HERE
 }
 
-
+/**
+ *
+ * @param f
+ * @param word
+ * @param def
+ * @param endFile
+ * @return
+ */
 short readWordDef(FILE* f, char* word, char* def, bool* endFile) {
 
     char rchar; //simple sentinel for find EOF
@@ -91,6 +111,12 @@ short readWordDef(FILE* f, char* word, char* def, bool* endFile) {
 
 }
 
+/**
+ * Remove char from string.
+ * @param str source string.
+ * @param garbage first char to replace.
+ * @param garbage2 second char to replace.
+ */
 void removeChar(char* str, char garbage, char garbage2) {
     char *src, *dst; //to strings pointer
     for (src = dst = str; *src != '\0'; src++) {
@@ -100,14 +126,15 @@ void removeChar(char* str, char garbage, char garbage2) {
     *dst = '\0'; //ad end string
 }
 
-
-
-/*
-*RETURN 0: n2 is grater than n1
-*RETURN 1: n1 is grater than n2
-*RETURN 2: n1 is n2
-*RETURN 3: n1-> NULL or n2-> NULL
-*/
+/**
+ * Function to check alphabetical order between two word.
+ * @param n1 first string
+ * @param n2 third string
+ * @return 0 -> n2 is grater than n1
+ *         1 -> n1 is grater than n2
+ *         2 -> n1 is equal n2
+ *         3 -> n1-> NULL or n2-> NULL
+ */
 unsigned short alphabeticalOrder(const char* n1, const char* n2) {
 
     if (n1 == NULL || n2 == NULL)
@@ -124,6 +151,12 @@ unsigned short alphabeticalOrder(const char* n1, const char* n2) {
     return 2;
 }
 
+/**
+ * Function for determinate the distance between two strings.
+ * @param source Souce strings to check.
+ * @param target Target string.
+ * @return Return the distance.
+ */
 int distance(char *source, char *target) {
 
     if((strlen(source) == 0) || (strlen(target) == 0)) return 0;
@@ -151,6 +184,12 @@ int distance(char *source, char *target) {
     return distance[sourceWordCount][targetWordCount];
 }
 
+/**
+ * Function for calculation the similarity of two strings
+ * @param source First string
+ * @param target Target string to check
+ * @return similarity percentage 0 - 1.0
+ */
 double CalculateSimilarity(char *source, char *target) {
 
     if(source == NULL || target == NULL) return 0.0;

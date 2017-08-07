@@ -9,6 +9,11 @@ NODO* firstNode;
 NODO* secondNode;
 NODO* thirdNode;
 
+/**
+ *
+ * @param dictionary
+ * @return
+ */
 int empties_dictionary(NODO **dictionary) {
     if ((*dictionary) == sentinel || (*dictionary) == NULL)
         return 0;
@@ -20,6 +25,12 @@ int empties_dictionary(NODO **dictionary) {
     return 0;
 }
 
+/**
+ *
+ * @param n
+ * @param index
+ * @param nthnode
+ */
 void find_index_word(NODO* n, int index, NODO** nthnode){
 
     if(n == sentinel)
@@ -33,8 +44,13 @@ void find_index_word(NODO* n, int index, NODO** nthnode){
     find_index_word(n->right, index, nthnode);
 }
 
-
-
+/**
+ *
+ * @param n
+ * @param head
+ * @param word
+ * @return
+ */
 int search_in_node(NODO *n, MSWNode *head, char *word) {
     if (n->word == NULL)
         return 0;
@@ -65,6 +81,11 @@ int search_in_node(NODO *n, MSWNode *head, char *word) {
     return ris | search_in_node(n->right, head, word);
 }
 
+/**
+ *
+ * @param dictionary
+ * @param word
+ */
 void setSimilarity(NODO *dictionary, char* word) {
 
     if(dictionary == sentinel)
@@ -76,6 +97,11 @@ void setSimilarity(NODO *dictionary, char* word) {
     setSimilarity(dictionary->right, word);
 }
 
+/**
+ *
+ * @param root
+ * @param x
+ */
 void leftRotate(NODO** root, NODO* x)
 {
     NODO* y = x->right; //Create new NODO and assign to x.right
@@ -96,6 +122,11 @@ void leftRotate(NODO** root, NODO* x)
     x->parent = y;
 }
 
+/**
+ *
+ * @param root
+ * @param y
+ */
 void rightRotate(NODO** root, NODO* y)
 {
     NODO* x = y->left; //Create new NODO and assign to x.right
@@ -116,6 +147,11 @@ void rightRotate(NODO** root, NODO* y)
     y->parent = x;
 }
 
+/**
+ *
+ * @param root
+ * @param node
+ */
 void insertFixUp(NODO** root, NODO** node) {
     NODO* T = *root;
     NODO* z = *node; //Puntatore temporaneo al nodo
@@ -164,6 +200,11 @@ void insertFixUp(NODO** root, NODO** node) {
     T->isBlack = true;
 }
 
+/**
+ *
+ * @param root
+ * @param node
+ */
 void insertRBT(NODO** root, NODO* node) {
     NODO* y = NULL;
     NODO* x = NULL;
@@ -210,6 +251,11 @@ void insertRBT(NODO** root, NODO* node) {
     insertFixUp(root, &node);
 }
 
+/**
+ *
+ * @param root
+ * @param z
+ */
 void rb_delete(NODO** root, NODO* z) {
     NODO* y = z;
     NODO* x;
@@ -260,6 +306,12 @@ void rb_delete(NODO** root, NODO* z) {
     return y; //successore
 }*/
 
+/**
+ *
+ * @param root
+ * @param word
+ * @return
+ */
 NODO* searchWord(NODO* root, char* word) {
     //caso base
     if (root == NULL || alphabeticalOrder(root->word, word) == 2)
@@ -281,6 +333,12 @@ NODO* searchWord(NODO* root, char* word) {
 
 }
 
+/**
+ *
+ * @param root
+ * @param u
+ * @param v
+ */
 void rb_transplant(NODO **root, NODO *u, NODO *v) {
     //Sono nella radice
     if (u->parent == sentinel)
@@ -295,6 +353,11 @@ void rb_transplant(NODO **root, NODO *u, NODO *v) {
     v->parent = u->parent; //aggiorno puntatori
 }
 
+/**
+ *
+ * @param root
+ * @param x
+ */
 void rb_deleteFixUp(NODO** root, NODO * x) {
 
     NODO* w = NULL;
@@ -358,6 +421,11 @@ void rb_deleteFixUp(NODO** root, NODO * x) {
     x->isBlack = true; //sistemo colore
 }
 
+/**
+ *
+ * @param x
+ * @return
+ */
 NODO* treeMinimum(NODO* x) {
     //Scorro fino al minimo
     while (x->left != sentinel)
@@ -366,6 +434,10 @@ NODO* treeMinimum(NODO* x) {
     return x;
 }
 
+/**
+ *
+ * @return
+ */
 int createSentinel() {
     //Create node
     sentinel = (NODO*)malloc(sizeof(NODO));
@@ -384,6 +456,13 @@ int createSentinel() {
     return 0; //Ok
 }
 
+/**
+ *
+ * @param dictionary
+ * @param exclude1
+ * @param exclude2
+ * @param count
+ */
 void relativeMax(NODO* dictionary, NODO* exclude1, NODO* exclude2, int count) {
 
     if(dictionary == sentinel)

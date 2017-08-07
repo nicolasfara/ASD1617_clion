@@ -64,12 +64,13 @@ int main(void) {
     printDictionary(dictionary);
     printf("\nNumero di parole salvate nel dizionario : %d\n\n", countWord(dictionary));
     char *first = NULL, *second = NULL, *third= NULL, *word = NULL;
-    printf("Search Advance: %d\t%s\t%s\t%s\n", searchAdvance(dictionary, word, &first, &second, &third), first, second, third);
+    printf("Search Advance \"%s\": %s\t%s\t%s\t Return: %d\n", word , first, second, third, searchAdvance(dictionary, word, &first, &second, &third));
     word = (char*)malloc(sizeof(char) * MAX_WORD);
     if (word == NULL)
         exit(1);
-    strcpy(word, "algoritmi");
-    printf("Search Advance: %s\t%s\t%s\t%d\n\n",first, second, third, searchAdvance(dictionary, word, &first, &second, &third));
+
+    strcpy(word, "problema");
+    printf("Search Advance \"%s\": %s\t%s\t%s\t Return: %d\n\n",word, first, second, third, searchAdvance(dictionary, word, &first, &second, &third));
 
     system("PAUSE");
     return (0);

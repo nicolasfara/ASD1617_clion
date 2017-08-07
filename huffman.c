@@ -8,6 +8,10 @@ int letter_frequencies[31] = { 81, 15, 28, 43, 128, 23, 20, 61, 71, 2, 1, 40, 24
         //  P   Q  R   S   T   U   V   W   X   Y  Z  SPC NULL NL  '  EOF
                                   20, 1, 61, 64, 91, 28, 10, 24, 1, 20, 1, 130, 80, 80, 5, 80};
 
+/**
+ * return the node for huffman root.
+ * @return return node root.
+ */
 HNode *build_huffman_tree() {
     HNode *nodes_head = allocates_node(0);				//ALLOCO IL PRIMO NODO DELLA LISTA
     HNode *temp = nodes_head;
@@ -38,6 +42,11 @@ HNode *build_huffman_tree() {
     return nodes_head;									//RITORNO LA TESTA DELLA LISTA CHE ORA CORRISPONDERA' ALLA RADICE DELL'ALBERO DI HUFFMAN
 }
 
+/**
+ * allocate node in huffman.
+ * @param i input value.
+ * @return node root.
+ */
 HNode *allocates_node(int i) {
     HNode *node = (HNode *)malloc(sizeof(HNode));		//ALLOCO IL NODO
     if (node == NULL)									//CONTROLLO L'ALLOCAZIONE
@@ -49,6 +58,11 @@ HNode *allocates_node(int i) {
     return node;										//PUNTATORE AL NODO
 }
 
+/**
+ *
+ * @param nodes_head
+ * @return
+ */
 HNode *extract_smaller_one(HNode **nodes_head) {
     HNode *minimum = *nodes_head;
     HNode *scrolling = *nodes_head, *previous = NULL;
@@ -79,6 +93,12 @@ HNode *extract_smaller_one(HNode **nodes_head) {
     return minimum;										//RESTITUISCO L'INDIRIZZO DEL NODO CON FREQUENZA MINORE
 }
 
+/**
+ *
+ * @param code_table
+ * @param tree_node
+ * @param code
+ */
 void fill_table(unsigned int *code_table, HNode *tree_node, unsigned int code) {
     if (tree_node->letter != 127)									//SE SIAMO ALLA FOGLIA (C'E' UN VALORE != DA 127)
         code_table[(int)tree_node->letter] = code;					//"CODE" HA ASSUNTO IL VALORE "BINARIO" DEL PERCORSO DA RADICE->FOGLIA
@@ -96,6 +116,13 @@ void fill_table(unsigned int *code_table, HNode *tree_node, unsigned int code) {
     return;
 }
 
+/**
+ *
+ * @param n
+ * @param output
+ * @param code_table
+ * @return
+ */
 int compress_node(NODO * n, FILE * output, unsigned int *code_table) {
     if (n == NULL || n->word == NULL)
         return -1;
@@ -107,6 +134,12 @@ int compress_node(NODO * n, FILE * output, unsigned int *code_table) {
     return 0;
 }
 
+/**
+ *
+ * @param n_string
+ * @param output
+ * @param code_table
+ */
 void compress_string(char *n_string, FILE *output, unsigned int *code_table) {
     char bit = 0, c = 0, byte = 0;										//1 BYTE
     unsigned int code = 0, lenght = 0, i = 0, bits_left = 8;
@@ -194,6 +227,13 @@ void compress_string(char *n_string, FILE *output, unsigned int *code_table) {
     return;
 }
 
+/**
+ *
+ * @param input
+ * @param dict_root
+ * @param tree
+ * @return
+ */
 int decompress_file(FILE *input, NODO **dict_root, HNode *tree) {
     HNode *current = tree;
     register char c;

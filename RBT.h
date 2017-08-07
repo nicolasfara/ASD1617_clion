@@ -34,6 +34,10 @@ typedef struct MSW {		//most similar word
 
 NODO *sentinel; //Sentinella per le foglie e padre della radice
 
+extern double relMax;
+extern NODO* firstNode;
+extern NODO* secondNode;
+extern NODO* thirdNode;
 
 void leftRotate(NODO** root, NODO* x);
 void rightRotate(NODO** root, NODO* y);
@@ -51,6 +55,7 @@ int empties_dictionary(NODO **dictionary);
 void find_index_word(NODO* n, int index, NODO** nthnode);
 int search_in_node(NODO *n, MSWNode *head, char *word);
 void setSimilarity(NODO *dictionary, char* word);
+void relativeMax(NODO* dictionary, NODO* exclude1, NODO* exclude2, int count);
 
 #endif //ASD1617_RBT_H
 

@@ -108,7 +108,7 @@ void removeChar(char* str, char garbage, char garbage2) {
 *RETURN 2: n1 is n2
 *RETURN 3: n1-> NULL or n2-> NULL
 */
-unsigned short alphabeticalOrder(char* n1, char* n2) {
+unsigned short alphabeticalOrder(const char* n1, const char* n2) {
 
     if (n1 == NULL || n2 == NULL)
         return 3;
@@ -116,7 +116,8 @@ unsigned short alphabeticalOrder(char* n1, char* n2) {
     for (int i = 0; i < MAX_WORD; i++) {
         if (n1[i] < n2[i])
             return 0;
-        else if (n1[i] > n2[i])
+
+        if (n1[i] > n2[i])
             return 1;
     }
 
@@ -141,7 +142,7 @@ int distance(char *source, char *target) {
         for (int j = 1; j <= targetWordCount ; j++) {
             int cost = (target[j - 1] == source[i - 1]) ? 0 : 1;
 
-            distance[i][j] = (int)fmin((float)fmin((float)distance[i - 1][j] + 1, (float)distance[i][j - 1] + 1), distance[i - 1][j - 1] + cost);
+            distance[i][j] = (int)fmin((float)fmin((double)distance[i - 1][j] + 1, (double)distance[i][j - 1] + 1), distance[i - 1][j - 1] + cost);
 
         }
 

@@ -251,10 +251,25 @@ NODO *importDictionary(char * fileInput) {
 
 int searchAdvance(NODO * dictionary, char * word, char ** first, char ** second, char ** third) {
 
+    if(word == NULL)
+        return -1;
+
     setSimilarity(dictionary, word);
 
+    relMax = 0;
+    relativeMax(dictionary, NULL, NULL, 1);
+    relMax = 0;
+    relativeMax(dictionary, firstNode, NULL, 2);
+    relMax = 0;
+    relativeMax(dictionary, firstNode, secondNode, 3);
 
+    if(!firstNode->percentageSimilarity || !secondNode->percentageSimilarity || !thirdNode->percentageSimilarity)
+        return -1;
 
+    *first = firstNode->word;
+    *second = secondNode->word;
+    *third = thirdNode->word;
+    return 0;
 }
 
 

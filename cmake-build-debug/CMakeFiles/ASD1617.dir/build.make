@@ -43,10 +43,10 @@ RM = /opt/clion/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolasfarabegoli/CLionProjects/ASD1617_clion
+CMAKE_SOURCE_DIR = /home/nicolasfarabegoli/CLionProjects/ASD1617
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ASD1617.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/ASD1617.dir/flags.make
 
 CMakeFiles/ASD1617.dir/main.c.o: CMakeFiles/ASD1617.dir/flags.make
 CMakeFiles/ASD1617.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ASD1617.dir/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/main.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ASD1617.dir/main.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/main.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617/main.c
 
 CMakeFiles/ASD1617.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/main.c > CMakeFiles/ASD1617.dir/main.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617/main.c > CMakeFiles/ASD1617.dir/main.c.i
 
 CMakeFiles/ASD1617.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/main.c -o CMakeFiles/ASD1617.dir/main.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617/main.c -o CMakeFiles/ASD1617.dir/main.c.s
 
 CMakeFiles/ASD1617.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/ASD1617.dir/main.c.o.provides.build: CMakeFiles/ASD1617.dir/main.c.o
 
 CMakeFiles/ASD1617.dir/lib1617.c.o: CMakeFiles/ASD1617.dir/flags.make
 CMakeFiles/ASD1617.dir/lib1617.c.o: ../lib1617.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ASD1617.dir/lib1617.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/lib1617.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/lib1617.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ASD1617.dir/lib1617.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/lib1617.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.c
 
 CMakeFiles/ASD1617.dir/lib1617.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/lib1617.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/lib1617.c > CMakeFiles/ASD1617.dir/lib1617.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.c > CMakeFiles/ASD1617.dir/lib1617.c.i
 
 CMakeFiles/ASD1617.dir/lib1617.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/lib1617.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/lib1617.c -o CMakeFiles/ASD1617.dir/lib1617.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617/lib1617.c -o CMakeFiles/ASD1617.dir/lib1617.c.s
 
 CMakeFiles/ASD1617.dir/lib1617.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/ASD1617.dir/lib1617.c.o.provides.build: CMakeFiles/ASD1617.dir/lib161
 
 CMakeFiles/ASD1617.dir/RBT.c.o: CMakeFiles/ASD1617.dir/flags.make
 CMakeFiles/ASD1617.dir/RBT.c.o: ../RBT.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ASD1617.dir/RBT.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/RBT.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ASD1617.dir/RBT.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/RBT.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617/RBT.c
 
 CMakeFiles/ASD1617.dir/RBT.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/RBT.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.c > CMakeFiles/ASD1617.dir/RBT.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617/RBT.c > CMakeFiles/ASD1617.dir/RBT.c.i
 
 CMakeFiles/ASD1617.dir/RBT.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/RBT.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/RBT.c -o CMakeFiles/ASD1617.dir/RBT.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617/RBT.c -o CMakeFiles/ASD1617.dir/RBT.c.s
 
 CMakeFiles/ASD1617.dir/RBT.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/ASD1617.dir/RBT.c.o.provides.build: CMakeFiles/ASD1617.dir/RBT.c.o
 
 CMakeFiles/ASD1617.dir/huffman.c.o: CMakeFiles/ASD1617.dir/flags.make
 CMakeFiles/ASD1617.dir/huffman.c.o: ../huffman.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ASD1617.dir/huffman.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/huffman.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ASD1617.dir/huffman.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/huffman.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617/huffman.c
 
 CMakeFiles/ASD1617.dir/huffman.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/huffman.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.c > CMakeFiles/ASD1617.dir/huffman.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617/huffman.c > CMakeFiles/ASD1617.dir/huffman.c.i
 
 CMakeFiles/ASD1617.dir/huffman.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/huffman.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/huffman.c -o CMakeFiles/ASD1617.dir/huffman.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617/huffman.c -o CMakeFiles/ASD1617.dir/huffman.c.s
 
 CMakeFiles/ASD1617.dir/huffman.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/ASD1617.dir/huffman.c.o.provides.build: CMakeFiles/ASD1617.dir/huffma
 
 CMakeFiles/ASD1617.dir/utility.c.o: CMakeFiles/ASD1617.dir/flags.make
 CMakeFiles/ASD1617.dir/utility.c.o: ../utility.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ASD1617.dir/utility.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/utility.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ASD1617.dir/utility.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/utility.c.o   -c /home/nicolasfarabegoli/CLionProjects/ASD1617/utility.c
 
 CMakeFiles/ASD1617.dir/utility.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/utility.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.c > CMakeFiles/ASD1617.dir/utility.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolasfarabegoli/CLionProjects/ASD1617/utility.c > CMakeFiles/ASD1617.dir/utility.c.i
 
 CMakeFiles/ASD1617.dir/utility.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/utility.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/utility.c -o CMakeFiles/ASD1617.dir/utility.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolasfarabegoli/CLionProjects/ASD1617/utility.c -o CMakeFiles/ASD1617.dir/utility.c.s
 
 CMakeFiles/ASD1617.dir/utility.c.o.requires:
 
@@ -195,7 +195,7 @@ ASD1617: CMakeFiles/ASD1617.dir/huffman.c.o
 ASD1617: CMakeFiles/ASD1617.dir/utility.c.o
 ASD1617: CMakeFiles/ASD1617.dir/build.make
 ASD1617: CMakeFiles/ASD1617.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ASD1617"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ASD1617"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ASD1617.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -216,6 +216,6 @@ CMakeFiles/ASD1617.dir/clean:
 .PHONY : CMakeFiles/ASD1617.dir/clean
 
 CMakeFiles/ASD1617.dir/depend:
-	cd /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolasfarabegoli/CLionProjects/ASD1617_clion /home/nicolasfarabegoli/CLionProjects/ASD1617_clion /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug /home/nicolasfarabegoli/CLionProjects/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolasfarabegoli/CLionProjects/ASD1617 /home/nicolasfarabegoli/CLionProjects/ASD1617 /home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug /home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug /home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles/ASD1617.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ASD1617.dir/depend
 

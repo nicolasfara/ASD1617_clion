@@ -26,11 +26,9 @@ int levenshtein(const char *s, int ls, const char *t, int lt);
 unsigned char convert_accent(unsigned char c);
 short readWordDef(FILE* f, char* word, char* def, bool* endFile);
 void removeChar(char* str, char garbage, char garbage2);
-unsigned short alphabeticalOrder(char* n1, char* n2);
+unsigned short alphabeticalOrder(const char* n1, const char* n2);
 int distance(char *source, char *target);
 double CalculateSimilarity(char *source, char *target);
-
-
 
 #endif //ASD1617_UTILITY_H
 

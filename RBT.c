@@ -4,6 +4,11 @@
 
 #include "RBT.h"
 
+double relMax = 0;
+NODO* firstNode;
+NODO* secondNode;
+NODO* thirdNode;
+
 int empties_dictionary(NODO **dictionary) {
     if ((*dictionary) == sentinel || (*dictionary) == NULL)
         return 0;
@@ -377,4 +382,32 @@ int createSentinel() {
     sentinel->def = NULL;
 
     return 0; //Ok
+}
+
+void relativeMax(NODO* dictionary, NODO* exclude1, NODO* exclude2, int count) {
+
+    if(dictionary == sentinel)
+        return;
+
+    relativeMax(dictionary->left, exclude1, exclude2, count);
+
+    if(dictionary != exclude1 && dictionary != exclude2 && dictionary->percentageSimilarity > relMax) {
+        relMax = dictionary->percentageSimilarity;
+        switch(count) {
+            case 1:
+                firstNode = dictionary;
+                break;
+            case 2:
+                secondNode = dictionary;
+                break;
+            case 3:
+                thirdNode = dictionary;
+                break;
+            default:
+                break;
+        }
+    }
+
+    relativeMax(dictionary->right, exclude1, exclude2, count);
+
 }

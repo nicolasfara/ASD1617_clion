@@ -26,10 +26,10 @@ int empties_dictionary(NODO **dictionary) {
 }
 
 /**
- *
- * @param n
- * @param index
- * @param nthnode
+ * Find the node at position index.
+ * @param n Root of the tree.
+ * @param index position in the tree.
+ * @param nthnode node founded.
  */
 void find_index_word(NODO* n, int index, NODO** nthnode){
 
@@ -82,9 +82,9 @@ int search_in_node(NODO *n, MSWNode *head, char *word) {
 }
 
 /**
- *
- * @param dictionary
- * @param word
+ * This function set the similarity for each node in the tree.
+ * @param dictionary    root of the tree.
+ * @param word word     reference of node.
  */
 void setSimilarity(NODO *dictionary, char* word) {
 
@@ -98,9 +98,9 @@ void setSimilarity(NODO *dictionary, char* word) {
 }
 
 /**
- *
- * @param root
- * @param x
+ * Perform a left rotation for RBT.
+ * @param root  root of the tree.
+ * @param x     node to rotate.
  */
 void leftRotate(NODO** root, NODO* x)
 {
@@ -123,9 +123,9 @@ void leftRotate(NODO** root, NODO* x)
 }
 
 /**
- *
- * @param root
- * @param y
+ * Perform a right rotate for RBT.
+ * @param root  root of the tree.
+ * @param y     node to rotate.
  */
 void rightRotate(NODO** root, NODO* y)
 {
@@ -148,9 +148,9 @@ void rightRotate(NODO** root, NODO* y)
 }
 
 /**
- *
- * @param root
- * @param node
+ * Support function for insertRBT.
+ * @param root  root of the tree.
+ * @param node  node to insert.
  */
 void insertFixUp(NODO** root, NODO** node) {
     NODO* T = *root;
@@ -201,9 +201,9 @@ void insertFixUp(NODO** root, NODO** node) {
 }
 
 /**
- *
- * @param root
- * @param node
+ * Insert the node in the tree
+ * @param root  root of the tree.
+ * @param node  node to insert.
  */
 void insertRBT(NODO** root, NODO* node) {
     NODO* y = NULL;
@@ -252,9 +252,9 @@ void insertRBT(NODO** root, NODO* node) {
 }
 
 /**
- *
- * @param root
- * @param z
+ * Delete a node in the tree.
+ * @param root  root of the tree.
+ * @param z node to delete.
  */
 void rb_delete(NODO** root, NODO* z) {
     NODO* y = z;
@@ -307,10 +307,12 @@ void rb_delete(NODO** root, NODO* z) {
 }*/
 
 /**
- *
- * @param root
- * @param word
- * @return
+ * Search a word in the tree.
+ * @param root  root of the tree.
+ * @param word  word to search.
+ * @return      0 if the word is > of the current word.
+ *              1 if the word is < of the current word.
+ *              NULL if the word is = to the current word.
  */
 NODO* searchWord(NODO* root, char* word) {
     //caso base
@@ -334,10 +336,10 @@ NODO* searchWord(NODO* root, char* word) {
 }
 
 /**
- *
- * @param root
- * @param u
- * @param v
+ * Trasplant the u node to v node
+ * @param root  root of the tree.
+ * @param u     source node.
+ * @param v     destination node.
  */
 void rb_transplant(NODO **root, NODO *u, NODO *v) {
     //Sono nella radice
@@ -354,9 +356,9 @@ void rb_transplant(NODO **root, NODO *u, NODO *v) {
 }
 
 /**
- *
- * @param root
- * @param x
+ * Support function for delet a node.
+ * @param root  root of the tree.
+ * @param x     source node.
  */
 void rb_deleteFixUp(NODO** root, NODO * x) {
 
@@ -422,9 +424,9 @@ void rb_deleteFixUp(NODO** root, NODO * x) {
 }
 
 /**
- *
- * @param x
- * @return
+ * Return the minimum value in the tree.
+ * @param x root of the tree.
+ * @return  return the minimum node.
  */
 NODO* treeMinimum(NODO* x) {
     //Scorro fino al minimo
@@ -435,8 +437,9 @@ NODO* treeMinimum(NODO* x) {
 }
 
 /**
- *
- * @return
+ * Create the sentinel.
+ * @return -1 bad malloc.
+ *          0 OK.
  */
 int createSentinel() {
     //Create node
@@ -457,11 +460,11 @@ int createSentinel() {
 }
 
 /**
- *
- * @param dictionary
- * @param exclude1
- * @param exclude2
- * @param count
+ * Find the max percentage in the node considering the previous max.
+ * @param dictionary    root to tree.
+ * @param exclude1      First max find.
+ * @param exclude2      Second max find.
+ * @param count         Position of relative max.
  */
 void relativeMax(NODO* dictionary, NODO* exclude1, NODO* exclude2, int count) {
 

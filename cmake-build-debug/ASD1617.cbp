@@ -92,6 +92,12 @@
 		<Unit filename="/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.h">
 			<Option target="ASD1617"/>
 		</Unit>
+		<Unit filename="/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.c">
+			<Option target="ASD1617"/>
+		</Unit>
+		<Unit filename="/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.h">
+			<Option target="ASD1617"/>
+		</Unit>
 		<Unit filename="/home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.c">
 			<Option target="ASD1617"/>
 		</Unit>

@@ -177,6 +177,33 @@ huffman.c.s:
 	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman.c.s
 .PHONY : huffman.c.s
 
+huffman/huffman.o: huffman/huffman.c.o
+
+.PHONY : huffman/huffman.o
+
+# target to build an object file
+huffman/huffman.c.o:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman/huffman.c.o
+.PHONY : huffman/huffman.c.o
+
+huffman/huffman.i: huffman/huffman.c.i
+
+.PHONY : huffman/huffman.i
+
+# target to preprocess a source file
+huffman/huffman.c.i:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman/huffman.c.i
+.PHONY : huffman/huffman.c.i
+
+huffman/huffman.s: huffman/huffman.c.s
+
+.PHONY : huffman/huffman.s
+
+# target to generate assembly for a file
+huffman/huffman.c.s:
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman/huffman.c.s
+.PHONY : huffman/huffman.c.s
+
 lib1617.o: lib1617.c.o
 
 .PHONY : lib1617.o
@@ -273,6 +300,9 @@ help:
 	@echo "... huffman.o"
 	@echo "... huffman.i"
 	@echo "... huffman.s"
+	@echo "... huffman/huffman.o"
+	@echo "... huffman/huffman.i"
+	@echo "... huffman/huffman.s"
 	@echo "... lib1617.o"
 	@echo "... lib1617.i"
 	@echo "... lib1617.s"

@@ -3,7 +3,7 @@
 //
 
 #include "lib1617.h"
-#include "huffmam/huffman.h"
+#include "huffman/huffman.h"
 
 
 NODO *createFromFile(char * nameFile) {
@@ -274,7 +274,7 @@ int searchAdvance(NODO * dictionary, char * word, char ** first, char ** second,
 
 
 int compressHuffman(NODO * dictionary, char * file_name) {
-    char eof = 27;
+    /*char eof = 27;
     unsigned int code_table[ELEMENTS];		//tabella delle codifiche
     FILE *output_file = fopen(file_name, "wb");
     HNode *root = build_huffman_tree();		//albero delle codifiche
@@ -285,11 +285,24 @@ int compressHuffman(NODO * dictionary, char * file_name) {
     compress_string(&eof, output_file, code_table);
     fclose(output_file);
 
-    return 0;
+    return 0;*/
+    int code;
+    char in_name[] = "tmp_compress_huff";
+    FILE *out = fopen(file_name, "w");
+    saveDictionary(dictionary, in_name);
+    FILE *in = fopen(in_name, "r");
+    code = huffman_encode_file(in, out);
+
+    fclose(in);
+    fclose(out);
+
+    remove(in_name);
+
+    return code;
 }
 
 int decompressHuffman(char * file_name, NODO ** dictionary) {
-    int x = 0;
+    /*int x = 0;
     FILE *input_file = fopen(file_name, "rb");
     HNode *root = build_huffman_tree();
     empties_dictionary(dictionary);						//svuoto il dizionario attuale
@@ -301,5 +314,22 @@ int decompressHuffman(char * file_name, NODO ** dictionary) {
     x = decompress_file(input_file, dictionary, root);	//decomprimo il file
     fclose(input_file);
 
-    return x;
+
+    return x;*/
+    int code;
+    char out_name[] = "tmp_decompress_huff";
+    FILE *input_file = fopen(file_name, "r");
+    FILE *output_file = fopen(out_name, "w");
+    code = huffman_decode_file(input_file, output_file);
+    if(code)
+        printf("Male male\n");
+
+    fclose(input_file);
+    fclose(output_file);
+
+    *dictionary = importDictionary(out_name);
+
+    remove(out_name);
+
+    return code;
 }

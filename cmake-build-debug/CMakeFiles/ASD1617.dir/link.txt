@@ -1,1 +1,1 @@
-/usr/bin/gcc -g   CMakeFiles/ASD1617.dir/main.c.o CMakeFiles/ASD1617.dir/lib1617.c.o CMakeFiles/ASD1617.dir/RBT.c.o CMakeFiles/ASD1617.dir/huffman.c.o CMakeFiles/ASD1617.dir/utility.c.o  -o ASD1617 -lm 
+/usr/bin/gcc -g   CMakeFiles/ASD1617.dir/main.c.o CMakeFiles/ASD1617.dir/lib1617.c.o CMakeFiles/ASD1617.dir/RBT.c.o CMakeFiles/ASD1617.dir/huffman.c.o CMakeFiles/ASD1617.dir/utility.c.o CMakeFiles/ASD1617.dir/huffman/huffman.c.o  -o ASD1617 -lm 

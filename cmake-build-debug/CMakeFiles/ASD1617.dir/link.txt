@@ -1,1 +1,0 @@
-/usr/bin/gcc -g   CMakeFiles/ASD1617.dir/main.c.o CMakeFiles/ASD1617.dir/lib1617.c.o  -o ASD1617 -lm 

@@ -1,3 +1,0 @@
-bellà Un algoritmo si definisce come un procedimento che risolve un 
-determinato problema , o una classe di problemi , attraverso 
-un numero finito di passi elementari cavallo. 

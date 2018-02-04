@@ -1,3 +1,0 @@
-/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug/CMakeFiles/ASD1617.dir

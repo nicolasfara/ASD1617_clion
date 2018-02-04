@@ -3,7 +3,7 @@
 //
 
 #include "lib1617.h"
-
+#include "huffmam/huffman.h"
 
 
 NODO *createFromFile(char * nameFile) {

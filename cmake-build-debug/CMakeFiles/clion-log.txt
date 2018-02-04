@@ -1,6 +1,6 @@
-/opt/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/nicolasfarabegoli/CLionProjects/ASD1617
--- The C compiler identification is GNU 7.1.1
--- The CXX compiler identification is GNU 7.1.1
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/nicolas/Documents/git-repo/ASD1617_clion
+-- The C compiler identification is GNU 6.4.0
+-- The CXX compiler identification is GNU 6.4.0
 -- Check for working C compiler: /usr/bin/gcc
 -- Check for working C compiler: /usr/bin/gcc -- works
 -- Detecting C compiler ABI info
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/nicolasfarabegoli/CLionProjects/ASD1617/cmake-build-debug
+-- Build files have been written to: /home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug

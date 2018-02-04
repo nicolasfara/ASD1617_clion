@@ -1,13 +1,13 @@
-set(CMAKE_HOST_SYSTEM "Linux-4.12.3-1-macbook")
+set(CMAKE_HOST_SYSTEM "Linux-4.9.76-gentoo-r1")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "4.12.3-1-macbook")
+set(CMAKE_HOST_SYSTEM_VERSION "4.9.76-gentoo-r1")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 
 
-set(CMAKE_SYSTEM "Linux-4.12.3-1-macbook")
+set(CMAKE_SYSTEM "Linux-4.9.76-gentoo-r1")
 set(CMAKE_SYSTEM_NAME "Linux")
-set(CMAKE_SYSTEM_VERSION "4.12.3-1-macbook")
+set(CMAKE_SYSTEM_VERSION "4.9.76-gentoo-r1")
 set(CMAKE_SYSTEM_PROCESSOR "x86_64")
 
 set(CMAKE_CROSSCOMPILING "FALSE")

@@ -10,10 +10,8 @@
 #include <time.h>
 #include "lib1617.h"
 
-
 char* randomWord(int dim);
 char* randomString(int dim);
-
 
 int main(void) {
     char* stringTemp;
@@ -48,13 +46,13 @@ int main(void) {
     printDictionary(dictionary);
     printf("\nNumero di parole salvate nel dizionario : %d\n\n", countWord(dictionary));
 
-
     printf("\nRicerca Parola \"%s\" -> definizione : [%s]\n\n", getWordAt(dictionary, 2), searchDef(dictionary, getWordAt(dictionary, 2)));
     printf("\nRicerca Parola \"%s\" -> definizione : [%s]\n\n", getWordAt(dictionary, 7), searchDef(dictionary, getWordAt(dictionary, 7)));
     stringTemp = "eftd";
     printf("\nRicerca Parola \"%s\" -> definizione : [%s]\n\n", stringTemp, searchDef(dictionary, stringTemp));
     saveDictionary(dictionary, "od.txt");
     dictionary = importDictionary("od.txt");
+    printf("FINE IMPORTO\n");
     puts("IMPORT DICTIONARY\n");
     printDictionary(dictionary);
 
@@ -75,8 +73,6 @@ int main(void) {
     system("PAUSE");
     return (0);
 }
-
-
 
 char* randomWord(int dim) {
     int  i;
@@ -108,4 +104,3 @@ char* randomString(int dim) {
     printf("\t\t-----> randomString = %s \n", string);
     return string;
 }
-

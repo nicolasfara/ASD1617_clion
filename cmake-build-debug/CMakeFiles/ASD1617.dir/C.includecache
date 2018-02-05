@@ -20,21 +20,9 @@ stdbool.h
 utility.h
 /home/nicolas/Documents/git-repo/ASD1617_clion/utility.h
 
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.c
+/home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.c
 huffman.h
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.h
-
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.h
-stdio.h
--
-stdlib.h
--
-RBT.h
-/home/nicolas/Documents/git-repo/ASD1617_clion/RBT.h
-
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.c
-huffman.h
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.h
+/home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.h
 stdio.h
 -
 stdlib.h
@@ -52,17 +40,29 @@ malloc.h
 netinet/in.h
 -
 
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.h
+/home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.h
 stdio.h
 -
 stdint.h
 -
 
+/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.c
+huffman.h
+/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.h
+
+/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.h
+stdio.h
+-
+stdlib.h
+-
+RBT.h
+/home/nicolas/Documents/git-repo/ASD1617_clion/RBT.h
+
 /home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.c
 lib1617.h
 /home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.h
-huffman/huffman.h
-/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.h
+huff/huffman.h
+/home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.h
 
 /home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.h
 stdio.h
@@ -93,6 +93,8 @@ lib1617.h
 /home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.h
 
 /home/nicolas/Documents/git-repo/ASD1617_clion/utility.c
+regex.h
+-
 utility.h
 /home/nicolas/Documents/git-repo/ASD1617_clion/utility.h
 

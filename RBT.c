@@ -240,7 +240,8 @@ void insertRBT(NODO** root, NODO* node) {
                 y->right = node;
                 break;
             case 2:
-                return;
+                //return;
+                break;
             default:
                 break;
         }
@@ -322,10 +323,8 @@ NODO* searchWord(NODO* root, char* word) {
     switch (alphabeticalOrder(root->word, word)) {
         case 0: //Peso Maggiore
             return searchWord(root->right, word);
-            break;
         case 1: //peso minore
             return searchWord(root->left, word);
-            break;
         default:
             return NULL;
     }
@@ -491,5 +490,4 @@ void relativeMax(NODO* dictionary, NODO* exclude1, NODO* exclude2, int count) {
     }
 
     relativeMax(dictionary->right, exclude1, exclude2, count);
-
 }

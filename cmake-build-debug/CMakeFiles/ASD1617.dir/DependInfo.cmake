@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/nicolas/Documents/git-repo/ASD1617_clion/RBT.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/RBT.c.o"
+  "/home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/huff/huffman.c.o"
   "/home/nicolas/Documents/git-repo/ASD1617_clion/huffman.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/huffman.c.o"
-  "/home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/huffman/huffman.c.o"
   "/home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/lib1617.c.o"
   "/home/nicolas/Documents/git-repo/ASD1617_clion/main.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/main.c.o"
   "/home/nicolas/Documents/git-repo/ASD1617_clion/utility.c" "/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles/ASD1617.dir/utility.c.o"

@@ -2,7 +2,9 @@
 // Created by nicolasfarabegoli on 8/4/17.
 //
 
+#include <regex.h>
 #include "utility.h"
+
 
 unsigned short count_find = 0;
 
@@ -98,13 +100,21 @@ short readWordDef(FILE* f, char* word, char* def, bool* endFile) {
 
     fscanf(f, "%s", word); //read the line
     removeChar(word, '\"', ':');
+    removeChar(word, ' ', ' ');
 
     fscanf(f, "%[^\"]s", def); //read the line
     removeChar(def, '[', ']'); //remove [] character
-    removeChar(def, '\n', ' ');
-    removeChar(def, '\r', '\r');
+    removeChar(def, '\n', '\n');
+    removeChar(def, '\r', '\n');
+
+    if(def[0] == ' ') {
+        for(int i = 0; i < strlen(def); i++) {
+            def[i] = def[i + 1];
+        }
+        def[strlen(def)] = '\0';
+    }
     //detect the EOF
-    if ((rchar = getc(f)) == EOF)
+    if (getc(f) == EOF)
         *endFile = true;
 
     return 0; //ok

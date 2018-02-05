@@ -3,7 +3,7 @@
 //
 
 #include "lib1617.h"
-#include "huffman/huffman.h"
+#include "huff/huffman.h"
 
 
 NODO *createFromFile(char * nameFile) {
@@ -68,8 +68,12 @@ NODO *createFromFile(char * nameFile) {
 void printDictionary(NODO * dictionary) {//stampa in-order
     if (dictionary != NULL && dictionary != sentinel) {
         printDictionary(dictionary->left);
+        if(dictionary == dictionary->parent->left)
+            printf("Sinistra: ");
+        else if(dictionary == dictionary->parent->right)
+            printf("Destra: ");
         printf("\"%s\": ", dictionary->word);
-        printf("[%s]\n", dictionary->def);
+        printf("\[%s\]\n", dictionary->def);
         printDictionary(dictionary->right);
     }
 }
@@ -111,7 +115,7 @@ int insertWord(NODO ** dictionary, char * word) {
     return 0;
 }
 
-int cancWord(NODO ** dictionary, char * word)
+int cancWord(NODO ** dictionary, char *word)
 {
     //search node
     NODO* sWord = searchWord(*dictionary, word);
@@ -221,9 +225,9 @@ NODO *importDictionary(char * fileInput) {
             strncpy(node->def, def, MAX_DEF);
         strncpy(node->word, word, MAX_WORD);
         node->isBlack = false;
-        node->left = NULL;
-        node->parent = NULL;
-        node->right = NULL;
+        node->left = sentinel;
+        node->parent = sentinel;
+        node->right = sentinel;
         //add to the tree
         insertRBT(&root, node);
     }

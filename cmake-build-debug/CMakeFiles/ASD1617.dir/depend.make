@@ -5,17 +5,17 @@ CMakeFiles/ASD1617.dir/RBT.c.o: ../RBT.c
 CMakeFiles/ASD1617.dir/RBT.c.o: ../RBT.h
 CMakeFiles/ASD1617.dir/RBT.c.o: ../utility.h
 
+CMakeFiles/ASD1617.dir/huff/huffman.c.o: ../huff/huffman.c
+CMakeFiles/ASD1617.dir/huff/huffman.c.o: ../huff/huffman.h
+
 CMakeFiles/ASD1617.dir/huffman.c.o: ../RBT.h
 CMakeFiles/ASD1617.dir/huffman.c.o: ../huffman.c
 CMakeFiles/ASD1617.dir/huffman.c.o: ../huffman.h
 CMakeFiles/ASD1617.dir/huffman.c.o: ../utility.h
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o: ../huffman/huffman.c
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o: ../huffman/huffman.h
-
 CMakeFiles/ASD1617.dir/lib1617.c.o: ../RBT.h
+CMakeFiles/ASD1617.dir/lib1617.c.o: ../huff/huffman.h
 CMakeFiles/ASD1617.dir/lib1617.c.o: ../huffman.h
-CMakeFiles/ASD1617.dir/lib1617.c.o: ../huffman/huffman.h
 CMakeFiles/ASD1617.dir/lib1617.c.o: ../lib1617.c
 CMakeFiles/ASD1617.dir/lib1617.c.o: ../lib1617.h
 CMakeFiles/ASD1617.dir/lib1617.c.o: ../utility.h

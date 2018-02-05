@@ -177,28 +177,28 @@ CMakeFiles/ASD1617.dir/utility.c.o.provides: CMakeFiles/ASD1617.dir/utility.c.o.
 CMakeFiles/ASD1617.dir/utility.c.o.provides.build: CMakeFiles/ASD1617.dir/utility.c.o
 
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o: CMakeFiles/ASD1617.dir/flags.make
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o: ../huffman/huffman.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ASD1617.dir/huffman/huffman.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/huffman/huffman.c.o   -c /home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.c
+CMakeFiles/ASD1617.dir/huff/huffman.c.o: CMakeFiles/ASD1617.dir/flags.make
+CMakeFiles/ASD1617.dir/huff/huffman.c.o: ../huff/huffman.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ASD1617.dir/huff/huffman.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ASD1617.dir/huff/huffman.c.o   -c /home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.c
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/huffman/huffman.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.c > CMakeFiles/ASD1617.dir/huffman/huffman.c.i
+CMakeFiles/ASD1617.dir/huff/huffman.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ASD1617.dir/huff/huffman.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.c > CMakeFiles/ASD1617.dir/huff/huffman.c.i
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/huffman/huffman.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolas/Documents/git-repo/ASD1617_clion/huffman/huffman.c -o CMakeFiles/ASD1617.dir/huffman/huffman.c.s
+CMakeFiles/ASD1617.dir/huff/huffman.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ASD1617.dir/huff/huffman.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.c -o CMakeFiles/ASD1617.dir/huff/huffman.c.s
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o.requires:
+CMakeFiles/ASD1617.dir/huff/huffman.c.o.requires:
 
-.PHONY : CMakeFiles/ASD1617.dir/huffman/huffman.c.o.requires
+.PHONY : CMakeFiles/ASD1617.dir/huff/huffman.c.o.requires
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o.provides: CMakeFiles/ASD1617.dir/huffman/huffman.c.o.requires
-	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huffman/huffman.c.o.provides.build
-.PHONY : CMakeFiles/ASD1617.dir/huffman/huffman.c.o.provides
+CMakeFiles/ASD1617.dir/huff/huffman.c.o.provides: CMakeFiles/ASD1617.dir/huff/huffman.c.o.requires
+	$(MAKE) -f CMakeFiles/ASD1617.dir/build.make CMakeFiles/ASD1617.dir/huff/huffman.c.o.provides.build
+.PHONY : CMakeFiles/ASD1617.dir/huff/huffman.c.o.provides
 
-CMakeFiles/ASD1617.dir/huffman/huffman.c.o.provides.build: CMakeFiles/ASD1617.dir/huffman/huffman.c.o
+CMakeFiles/ASD1617.dir/huff/huffman.c.o.provides.build: CMakeFiles/ASD1617.dir/huff/huffman.c.o
 
 
 # Object files for target ASD1617
@@ -208,7 +208,7 @@ ASD1617_OBJECTS = \
 "CMakeFiles/ASD1617.dir/RBT.c.o" \
 "CMakeFiles/ASD1617.dir/huffman.c.o" \
 "CMakeFiles/ASD1617.dir/utility.c.o" \
-"CMakeFiles/ASD1617.dir/huffman/huffman.c.o"
+"CMakeFiles/ASD1617.dir/huff/huffman.c.o"
 
 # External object files for target ASD1617
 ASD1617_EXTERNAL_OBJECTS =
@@ -218,7 +218,7 @@ ASD1617: CMakeFiles/ASD1617.dir/lib1617.c.o
 ASD1617: CMakeFiles/ASD1617.dir/RBT.c.o
 ASD1617: CMakeFiles/ASD1617.dir/huffman.c.o
 ASD1617: CMakeFiles/ASD1617.dir/utility.c.o
-ASD1617: CMakeFiles/ASD1617.dir/huffman/huffman.c.o
+ASD1617: CMakeFiles/ASD1617.dir/huff/huffman.c.o
 ASD1617: CMakeFiles/ASD1617.dir/build.make
 ASD1617: CMakeFiles/ASD1617.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nicolas/Documents/git-repo/ASD1617_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable ASD1617"
@@ -234,7 +234,7 @@ CMakeFiles/ASD1617.dir/requires: CMakeFiles/ASD1617.dir/lib1617.c.o.requires
 CMakeFiles/ASD1617.dir/requires: CMakeFiles/ASD1617.dir/RBT.c.o.requires
 CMakeFiles/ASD1617.dir/requires: CMakeFiles/ASD1617.dir/huffman.c.o.requires
 CMakeFiles/ASD1617.dir/requires: CMakeFiles/ASD1617.dir/utility.c.o.requires
-CMakeFiles/ASD1617.dir/requires: CMakeFiles/ASD1617.dir/huffman/huffman.c.o.requires
+CMakeFiles/ASD1617.dir/requires: CMakeFiles/ASD1617.dir/huff/huffman.c.o.requires
 
 .PHONY : CMakeFiles/ASD1617.dir/requires
 

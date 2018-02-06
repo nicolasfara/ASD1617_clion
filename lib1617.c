@@ -5,6 +5,8 @@
 #include "lib1617.h"
 #include "huff/huffman.h"
 
+static int memory_encode_file(FILE *in, FILE *out);
+static int memory_decode_file(FILE *in, FILE *out);
 
 NODO *createFromFile(char * nameFile) {
     unsigned short i = 0;
@@ -73,7 +75,7 @@ void printDictionary(NODO * dictionary) {//stampa in-order
         else if(dictionary == dictionary->parent->right)
             printf("Destra: ");
         printf("\"%s\": ", dictionary->word);
-        printf("\[%s\]\n", dictionary->def);
+        printf("[%s]\n", dictionary->def);
         printDictionary(dictionary->right);
     }
 }
@@ -295,7 +297,7 @@ int compressHuffman(NODO * dictionary, char * file_name) {
     FILE *out = fopen(file_name, "w");
     saveDictionary(dictionary, in_name);
     FILE *in = fopen(in_name, "r");
-    code = huffman_encode_file(in, out);
+    code = memory_encode_file(in, out);
 
     fclose(in);
     fclose(out);
@@ -324,7 +326,7 @@ int decompressHuffman(char * file_name, NODO ** dictionary) {
     char out_name[] = "tmp_decompress_huff";
     FILE *input_file = fopen(file_name, "r");
     FILE *output_file = fopen(out_name, "w");
-    code = huffman_decode_file(input_file, output_file);
+    code = memory_decode_file(input_file, output_file);
     if(code)
         printf("Male male\n");
 
@@ -337,3 +339,96 @@ int decompressHuffman(char * file_name, NODO ** dictionary) {
 
     return code;
 }
+
+static int memory_encode_file(FILE *in, FILE *out)
+{
+    unsigned char *buf = NULL, *bufout = NULL;
+    unsigned int len = 0, cur = 0, inc = 1024, bufoutlen = 0;
+
+    /* Read the file into memory. */
+    while(!feof(in))
+    {
+        unsigned char *tmp;
+        len += inc;
+        tmp = (unsigned char*)realloc(buf, len);
+        if(!tmp)
+        {
+            if(buf)
+                free(buf);
+            return 1;
+        }
+
+        buf = tmp;
+        cur += fread(buf + cur, 1, inc, in);
+    }
+
+    if(!buf)
+        return 1;
+
+    /* Encode the memory. */
+    if(huffman_encode_memory(buf, cur, &bufout, &bufoutlen))
+    {
+        free(buf);
+        return 1;
+    }
+
+    free(buf);
+
+    /* Write the memory to the file. */
+    if(fwrite(bufout, 1, bufoutlen, out) != bufoutlen)
+    {
+        free(bufout);
+        return 1;
+    }
+
+    free(bufout);
+
+    return 0;
+}
+
+static int memory_decode_file(FILE *in, FILE *out)
+{
+    unsigned char *buf = NULL, *bufout = NULL;
+    unsigned int len = 0, cur = 0, inc = 1024, bufoutlen = 0;
+
+    /* Read the file into memory. */
+    while(!feof(in))
+    {
+        unsigned char *tmp;
+        len += inc;
+        tmp = (unsigned char*)realloc(buf, len);
+        if(!tmp)
+        {
+            if(buf)
+                free(buf);
+            return 1;
+        }
+
+        buf = tmp;
+        cur += fread(buf + cur, 1, inc, in);
+    }
+
+    if(!buf)
+        return 1;
+
+    /* Decode the memory. */
+    if(huffman_decode_memory(buf, cur, &bufout, &bufoutlen))
+    {
+        free(buf);
+        return 1;
+    }
+
+    free(buf);
+
+    /* Write the memory to the file. */
+    if(fwrite(bufout, 1, bufoutlen, out) != bufoutlen)
+    {
+        free(bufout);
+        return 1;
+    }
+
+    free(bufout);
+
+    return 0;
+}
+

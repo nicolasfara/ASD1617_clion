@@ -12,32 +12,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="007f15e4-27c1-4070-b3c5-a108e6fcd5bf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/huff/huffman.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/huff/huffman.h" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/RBT.c" afterPath="$PROJECT_DIR$/RBT.c" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ASD1617" afterPath="$PROJECT_DIR$/cmake-build-debug/ASD1617" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ASD1617.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ASD1617.cbp" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/C.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/DependInfo.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/RBT.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/RBT.c.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/huffman/huffman.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/huff/huffman.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/huff/huffman.c.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/huffman.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/huffman.c.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/lib1617.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/lib1617.c.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/link.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/main.c.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/utility.c.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/utility.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASD1617.dir/utility.c.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fileTest1617.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/fileTest1617.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/od.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/od.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/peda-session-800.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/peda-session-998.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/text.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/text.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tmp_decompress_huff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/huffman" afterPath="" />
       <change beforePath="$PROJECT_DIR$/lib1617.c" afterPath="$PROJECT_DIR$/lib1617.c" />
-      <change beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
       <change beforePath="$PROJECT_DIR$/utility.c" afterPath="$PROJECT_DIR$/utility.c" />
+      <change beforePath="$PROJECT_DIR$/utility.h" afterPath="$PROJECT_DIR$/utility.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -69,8 +65,8 @@
       <file leaf-file-name="lib1617.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib1617.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="393">
+              <caret line="77" column="21" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -78,23 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utility.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utility.c">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="894">
-              <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding>
-                <element signature="e#50#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RBT.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RBT.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3420">
-              <caret line="243" column="22" lean-forward="false" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
+            <state relative-caret-position="304">
+              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -103,9 +87,33 @@
       <file leaf-file-name="huffman.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/huff/huffman.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="988">
+              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="185" column="12" lean-forward="false" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
+              <folding>
+                <element signature="e#50#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="e#104#122#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,14 +137,15 @@
         <option value="$PROJECT_DIR$/dataStruct.h" />
         <option value="$PROJECT_DIR$/huffman.h" />
         <option value="$PROJECT_DIR$/lib1617.h" />
-        <option value="$PROJECT_DIR$/utility.h" />
         <option value="$PROJECT_DIR$/RBT.h" />
         <option value="$PROJECT_DIR$/huffman.c" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/RBT.c" />
+        <option value="$PROJECT_DIR$/utility.h" />
         <option value="$PROJECT_DIR$/lib1617.c" />
         <option value="$PROJECT_DIR$/utility.c" />
-        <option value="$PROJECT_DIR$/RBT.c" />
+        <option value="$PROJECT_DIR$/huff/huffman.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -237,24 +246,23 @@
       <workItem from="1503330093211" duration="1195000" />
       <workItem from="1517743324796" duration="3489000" />
       <workItem from="1517754246147" duration="6210000" />
-      <workItem from="1517828939852" duration="6300000" />
+      <workItem from="1517828939852" duration="10863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40898000" />
+    <option name="totallyTimeSpent" value="45461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3840" height="2117" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15517241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3433155" sideWeight="0.4985663" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3433155" sideWeight="0.4985663" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49817136" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977018" sideWeight="0.5018286" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.271123" sideWeight="0.5018286" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.271123" sideWeight="0.49817136" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.4985663" order="12" side_tool="false" content_ui="tabs" />
@@ -347,7 +355,7 @@
         <state relative-caret-position="198">
           <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
-            <element signature="e#50#68#0" expanded="true" />
+            <element signature="e#50#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -364,6 +372,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,14 +616,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataStruct.h" />
-    <entry file="file://$PROJECT_DIR$/utility.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/huffman.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -635,33 +636,11 @@
     <entry file="file://$PROJECT_DIR$/huffman/huffcode.c" />
     <entry file="file://$PROJECT_DIR$/huffman/huffman.c" />
     <entry file="file://$PROJECT_DIR$/huffman/huffman.h" />
-    <entry file="file://$PROJECT_DIR$/huff/huffman.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib1617.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/huffman.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="244" column="52" lean-forward="false" selection-start-line="244" selection-start-column="52" selection-end-line="244" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -675,10 +654,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RBT.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3420">
+          <caret line="243" column="22" lean-forward="false" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib1617.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3040">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#122#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib1617.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="393">
+          <caret line="77" column="21" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding>
             <element signature="e#51#71#0" expanded="true" />
           </folding>
@@ -687,18 +694,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utility.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="894">
-          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        <state relative-caret-position="735">
+          <caret line="185" column="12" lean-forward="false" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
           <folding>
-            <element signature="e#50#68#0" expanded="true" />
+            <element signature="e#50#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RBT.c">
+    <entry file="file://$PROJECT_DIR$/huff/huffman.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3420">
-          <caret line="243" column="22" lean-forward="false" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
+        <state relative-caret-position="988">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>

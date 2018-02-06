@@ -93,8 +93,8 @@ lib1617.h
 /home/nicolas/Documents/git-repo/ASD1617_clion/lib1617.h
 
 /home/nicolas/Documents/git-repo/ASD1617_clion/utility.c
-regex.h
--
+huff/huffman.h
+/home/nicolas/Documents/git-repo/ASD1617_clion/huff/huffman.h
 utility.h
 /home/nicolas/Documents/git-repo/ASD1617_clion/utility.h
 

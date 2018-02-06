@@ -26,6 +26,7 @@ CMakeFiles/ASD1617.dir/main.c.o: ../lib1617.h
 CMakeFiles/ASD1617.dir/main.c.o: ../main.c
 CMakeFiles/ASD1617.dir/main.c.o: ../utility.h
 
+CMakeFiles/ASD1617.dir/utility.c.o: ../huff/huffman.h
 CMakeFiles/ASD1617.dir/utility.c.o: ../utility.c
 CMakeFiles/ASD1617.dir/utility.c.o: ../utility.h
 

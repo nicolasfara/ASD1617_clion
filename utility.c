@@ -2,7 +2,7 @@
 // Created by nicolasfarabegoli on 8/4/17.
 //
 
-#include <regex.h>
+#include "huff/huffman.h"
 #include "utility.h"
 
 
@@ -93,7 +93,6 @@ unsigned char convert_accent(unsigned char c) {
  */
 short readWordDef(FILE* f, char* word, char* def, bool* endFile) {
 
-    char rchar; //simple sentinel for find EOF
     //Check if the argumets are omogeneous
     if (f == NULL || word == NULL || def == NULL)
         return -1; //bad
@@ -178,8 +177,14 @@ int distance(char *source, char *target) {
 
     int distance[sourceWordCount + 1][targetWordCount + 1];
 
-    for (int i = 0; i <= sourceWordCount ; distance[i][0] = i++);
-    for (int j = 0; j <= targetWordCount ; distance[0][j] = j++);
+    for (int i = 0; i <= sourceWordCount ; ) {
+        distance[i][0] = i;
+        i++;
+    }
+    for (int j = 0; j <= targetWordCount ; ) {
+        distance[0][j] = j;
+        j++;
+    }
 
     for (int i = 1; i <= sourceWordCount ; i++) {
         for (int j = 1; j <= targetWordCount ; j++) {
@@ -211,3 +216,4 @@ double CalculateSimilarity(char *source, char *target) {
         return 0.0;
     return (1.0f - ((double)stepsToSame / fmax((double)strlen(source), (double)strlen(target))));
 }
+

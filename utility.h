@@ -29,6 +29,5 @@ void removeChar(char* str, char garbage, char garbage2);
 unsigned short alphabeticalOrder(const char* n1, const char* n2);
 int distance(char *source, char *target);
 double CalculateSimilarity(char *source, char *target);
-
 #endif //ASD1617_UTILITY_H
 
